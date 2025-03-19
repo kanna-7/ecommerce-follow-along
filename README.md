@@ -90,7 +90,12 @@ This project is a fully functional ecommerce website designed to provide users w
 * Created the **card component** and Design a reusable card component with props for product details.
 * Design the **homepage layout** and Set up a grid layout or flexbox for displaying multiple cards neatly.
 
-# Milestone 9
+# Milestone 9 : Created Schema For  Product Upload**
 * Created **form for product upload**.
 * Created **add product** page in frontend.
 * Added **form validation** in Add Products page.
+
+# Milestone 10 : Created Schema Product Upload**
+* Created **ProductModel** in backend.
+* Created  the **productRouter** page in Backend.
+* Handeled file uploads by multer by multer inside middleware multer.
