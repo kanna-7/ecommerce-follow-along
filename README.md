@@ -99,3 +99,7 @@ This project is a fully functional ecommerce website designed to provide users w
 * Created **ProductModel** in backend.
 * Created  the **productRouter** page in Backend.
 * Handeled file uploads by multer by multer inside middleware multer.
+
+# Milestone 11:Created home page for product**
+* Created **Home page* for dynamic products presentation.
+* added the **backend* part for handelling products(created endpoint to get products).
