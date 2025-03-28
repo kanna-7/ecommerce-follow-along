@@ -5,16 +5,18 @@ import styles from "./AddProduct.module.css";
 const AddProduct = () => {
     const[noOfImages,setNoOfImages] = useState(new Array(1).fill(1));
     const[productDetails,setProductDatils] = useState({
-        name:"",
-        email:"",
-        password:""
+        title:"",
+        description:"",
+        price:""
     });
     const[productImages,setProductImages] = useState([]);
 
     async function handleSubmet(e){
+        e.preventDefault();
         try {
-            const {name,email,password} = productDetails;
-            if(!name || !email || !password || productImages.length == 0){
+            const {title,description,price} = productDetails;
+            console.log(productDetails,productImages.length);
+            if(!title || !description || !price || productImages.length==0){
                 alert("please add all fields");
                 return;
             }
@@ -25,9 +27,9 @@ const AddProduct = () => {
                 return;
             }
             const formData = new FormData();
-            formData.append("name",name);
-            formData.append("email",email);
-            formData.append("password",password);
+            formData.append("title",title);
+            formData.append("description",description);
+            formData.append("price",price);
             for(let i=0;i<productImages.length;i++){
                 formData.append("image",productImages[i]);
             }
@@ -47,14 +49,15 @@ const AddProduct = () => {
     <div>
       <form action="" className={styles.formbox} onSubmit={handleSubmet}>
         <input type="text" name={"title"} placeholder="Enter title..." onChange={(event)=>{
-            setProductDatils({...productDetails,[event.target.name]:event.target.value})
+            console.log(productDetails)
+            setProductDatils({...productDetails,title:event.target.value})
         }} />
         <input type="text" name={"description"} placeholder="Enter description..." onChange={(event)=>{
-            setProductDatils({...productDetails,[event.target.name]:event.target.value})
+            setProductDatils({...productDetails,description:event.target.value})
         }} />
 
         <input type="number" name="price" placeholder='Enter price...' onChange={(e)=>{
-            setProductDatils({...productDetails,[e.target.name]:e.target.value})
+            setProductDatils({...productDetails,price:e.target.value})
         }} />
         <select name="" id="" onChange={(event)=>{
             console.log(event.target.value,noOfImages)
@@ -72,10 +75,11 @@ const AddProduct = () => {
             noOfImages.map((ele)=>(
                 <input type="file" accept='image/*' onChange={(event)=>{
                     console.log(event.target.files[0]);
-                    setProductImages([...productDetails,event.target.files[0]]);
+                    setProductImages([...productImages,event.target.files[0]]);
                 }}/>
             ))
         }
+        <input type="submit" value={"Upload product"} />
       </form>
     </div>
   )
