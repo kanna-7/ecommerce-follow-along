@@ -58,11 +58,3 @@ app.use("/product",async (req, res, next) => {
 app.use('/allproducts',allProductRouter);
 
 
-app.listen(8000,async()=>{
-    try {
-        await connect();
-        console.log("Server connected successfully");
-    } catch (error) {
-        console.log("Error",error)
-    }
-})
