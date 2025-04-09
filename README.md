@@ -65,3 +65,7 @@
 # Milestone 16: Created ProductDetails Page
 * Created *Product Details* for showing full product details in details page.
 * Added Add to cart button with quantity selection.
+
+# Milestone 17: *Created CRUD for cart*
+* Created endpoints in backend CRUD for handling cart.
+* Handled quantity for product in cart.
