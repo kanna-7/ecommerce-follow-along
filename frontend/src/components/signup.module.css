@@ -1,0 +1,18 @@
+.formbox{
+    border: 5px solid blue;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    padding: 0.5rem;
+}
+
+.formbox  *{
+    display: block;
+    margin: auto;
+}
+
+.formbox > input{
+    display: flex;
+    justify-content: start;
+}
