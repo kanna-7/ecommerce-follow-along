@@ -120,3 +120,9 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 ### **🛠️ Milestone 22: Created Backend for Address and attached with fronted**
 ✅ created backend endpoint for handeling address.
 ✅ added backend endpoint with frontend.
+
+### **🛠️ Milestone 23: worked on address in frontend and backend**
+✅ Created Placeorder button in cart page and added navigation to select address.
+✅ Created select address page and provided option to select one address.
+✅ Created backend endpoint to send all address to user.
+
