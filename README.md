@@ -132,16 +132,22 @@ Ecommerce-Follow-Along is a full-fledged **E-Commerce Application** built using 
 ✅ Displayed total price in cart.
 ✅ added place order button at the bottom.
 
-## **🛠️ Milestone 25: Worked on order backend and email services*
-✅ Created endpoint for order.
-✅ Implemented mail service from nodemailer.
-✅ Handled address for the delivery.
 
-### **🛠️ Milestone 26: worked on order backend and email service**
+### **🛠️ Milestone 25 worked on order backend and email service
+✅ created endpoint for order.
+✅ implemented mail service from nodemailer.
+✅ handled address for the delivery.
+
+### **🛠️ Milestone 26 worked on order backend and email service
 ✅ Implemented mail with nodemailer.
-✅ Sending order details to user via email.
+✅ Sending order details to user via mail.
 
-### **🛠️ Milestone 27: worked on order backend and email service**
-✅ Worked on frontend for my order page.
-✅ Created get request to get request my orders.
+### **🛠️ Milestone 27 worked on frontend for my order page
+✅ created get request to get request my orders
 
+### **🛠️ Milestone 28 cancel order payment
+✅ Added cancel order functionality
+✅ created endpointpoint for payment id
+
+### **🛠️ Milestone 29 payment
+✅ Integrated dummy payment.
